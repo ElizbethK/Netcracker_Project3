@@ -1,7 +1,6 @@
 package com.netcracker.homeworks.project3;
 
-import com.netcracker.homeworks.project3.Chess.ChessPiece;
-import com.netcracker.homeworks.project3.Chess.Pawn;
+import com.netcracker.homeworks.project3.Chess.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,7 +53,6 @@ public class Main {
         person1.unfriend(person3);
         System.out.println(person1.getFriendNames());
         System.out.println("Numbers of friends: " + person1.getFriendCount());
-
        // System.out.println(person1);
 
 
@@ -92,24 +90,33 @@ public class Main {
         comboLock.turnRight(3);
 
         System.out.println(comboLock.open());
-
-
-        /* System.out.println('\n' + "///////////////////////////////////// " +
-                '\n' + "CHAPTER 9, Worked example 9.1 " +
-                '\n' + " --------------------------------");
-
+        
 
        System.out.println('\n' + "///////////////////////////////////// " +
                 '\n' + "CHAPTER 9, Programming projects 9.1 " +
                 '\n' + " --------------------------------");
-        ChessPiece chessPiece = new ChessPiece();
-        chessPiece.setPosition("a", "2");
 
         Pawn pawn = new Pawn();
-      //  pawn.setColumn("d");
-        //pawn.setRow("2");
-        pawn.setPawnPosition("b", "2");
-     //   pawn.canMoveTo();*/
+        pawn.setPosition("b", "2");
+        pawn.canMoveTo();
+     System.out.println('\n' + "~~~~~~~~~~~~~~~~");
+        Bishop bishop = new Bishop();
+        bishop.setPosition("c", "5");
+        bishop.canMoveTo();
+     System.out.println('\n' + "~~~~~~~~~~~~~~~~");
+        Queen queen = new Queen();
+        queen.setPosition("d", "3");
+        queen.canMoveTo();
+     System.out.println('\n' + "~~~~~~~~~~~~~~~~");
+        King king = new King();
+        king.setPosition("f", "5");
+        king.canMoveTo();
+     System.out.println('\n' + "~~~~~~~~~~~~~~~~");
+     Rook rook = new Rook();
+     rook.setPosition("a", "1");
+     rook.canMoveTo();
+     System.out.println('\n' + "~~~~~~~~~~~~~~~~");
+
 
 
 
